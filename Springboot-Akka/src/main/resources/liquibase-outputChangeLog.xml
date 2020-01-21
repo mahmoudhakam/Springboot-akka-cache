@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+	<changeSet author="mahmoud_abdelhakam (generated)"
+		id="1560950856318-1">
+		<createTable tableName="onprem_export_features">
+			<column name="ID" type="INT">
+				<constraints nullable="false" />
+			</column>
+			<column name="FEATURE_KEY" type="VARCHAR(512)">
+				<constraints nullable="false" />
+			</column>
+			<column name="PARENT_FETURE" type="INT">
+				<constraints nullable="false" />
+			</column>
+			<column name="JSON_KEY" type="VARCHAR(512)">
+				<constraints nullable="false" />
+			</column>
+			<column name="IS_ACTIVE" type="INT">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+	 <changeSet author="MAHMOUD_ABDELHAKAM (generated)" id="1571060253415-1">
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="1"/>
+            <column name="FEATURE_KEY" value="SummaryStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="2"/>
+            <column name="FEATURE_KEY" value="SiliconExpert Description"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="ROW_COM_DESC"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="3"/>
+            <column name="FEATURE_KEY" value="Datasheet URL"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="PDF_URL_DS"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="4"/>
+            <column name="FEATURE_KEY" value="Lifecycle Status"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="LC_STATE"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="5"/>
+            <column name="FEATURE_KEY" value="EU RoHS Status"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="ROHS"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="6"/>
+            <column name="FEATURE_KEY" value="RoHS Version"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="ROHS_VERSION"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="7"/>
+            <column name="FEATURE_KEY" value="Crosses"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="CROSS_COUNT"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="8"/>
+            <column name="FEATURE_KEY" value="PCN Summary"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="pcnCount"/>
+            <column name="IS_ACTIVE" valueNumeric="0"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="9"/>
+            <column name="FEATURE_KEY" value="Product Line"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="PL_NAME"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="10"/>
+            <column name="FEATURE_KEY" value="Taxonomy Path"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="TAX_PATH"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="11"/>
+            <column name="FEATURE_KEY" value="Introduction Date"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="INTRODUCTION_DATE"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="12"/>
+            <column name="FEATURE_KEY" value="Family Name"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="FAMILY"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="13"/>
+            <column name="FEATURE_KEY" value="SiliconExpert Grade"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="PART_RATING"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="14"/>
+            <column name="FEATURE_KEY" value="Part Image"/>
+            <column name="PARENT_FETURE" valueNumeric="1"/>
+            <column name="JSON_KEY" value="LARGE_IMAGE"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="15"/>
+            <column name="FEATURE_KEY" value="GeneralPassiveStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="16"/>
+            <column name="FEATURE_KEY" value="SiliconExpert Description"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="description"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="17"/>
+            <column name="FEATURE_KEY" value="Datasheet URL"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="pdfURL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="18"/>
+            <column name="FEATURE_KEY" value="Lifecycle Status"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="lifeCycle"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="19"/>
+            <column name="FEATURE_KEY" value="EU RoHS Status"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="rohs"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="20"/>
+            <column name="FEATURE_KEY" value="RoHS Version"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="rohs_version"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="21"/>
+            <column name="FEATURE_KEY" value="Crosses"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="crossCount"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="22"/>
+            <column name="FEATURE_KEY" value="PCN Summary"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="pcnCount"/>
+            <column name="IS_ACTIVE" valueNumeric="0"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="23"/>
+            <column name="FEATURE_KEY" value="Product Line"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="plName"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="24"/>
+            <column name="FEATURE_KEY" value="Taxonomy Path"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="taxonomyPath"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="25"/>
+            <column name="FEATURE_KEY" value="Introduction Date"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="introductionDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="26"/>
+            <column name="FEATURE_KEY" value="Family Name"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="familyName"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="27"/>
+            <column name="FEATURE_KEY" value="SiliconExpert Grade"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="grade"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="28"/>
+            <column name="FEATURE_KEY" value="Part Image"/>
+            <column name="PARENT_FETURE" valueNumeric="15"/>
+            <column name="JSON_KEY" value="largePartImage"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="29"/>
+            <column name="FEATURE_KEY" value="ParametricStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="30"/>
+            <column name="FEATURE_KEY" value="Max. Operating Temp."/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Maximum Operating Temperature"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="31"/>
+            <column name="FEATURE_KEY" value="Min. Operating Temp."/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Minimum Operating Temperature"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="32"/>
+            <column name="FEATURE_KEY" value="Supplier Temperature Grade"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Supplier Temperature Grade"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="33"/>
+            <column name="FEATURE_KEY" value="Typical Operating Supply Voltage"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Typical Operating Supply Voltage"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="34"/>
+            <column name="FEATURE_KEY" value="Max. Power Dissipation"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Maximum Power Dissipation"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="35"/>
+            <column name="FEATURE_KEY" value="Max. Operating Supply Voltage"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Maximum Operating Supply Voltage"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="36"/>
+            <column name="FEATURE_KEY" value="Output Voltage"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Output Voltage"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="37"/>
+            <column name="FEATURE_KEY" value="Max. Voltage Rating"/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Maximum Voltage Rating"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="38"/>
+            <column name="FEATURE_KEY" value="Max. Storage Temp."/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Maximum Storage Temperature"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="39"/>
+            <column name="FEATURE_KEY" value="Min. Storage Temp."/>
+            <column name="PARENT_FETURE" valueNumeric="29"/>
+            <column name="JSON_KEY" value="Minimum Storage Temperature"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="40"/>
+            <column name="FEATURE_KEY" value="RiskStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="41"/>
+            <column name="FEATURE_KEY" value="Estimated Years to EOL"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.yearsEOL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="42"/>
+            <column name="FEATURE_KEY" value="Years to EOL Comment"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.yearsEolComment"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="43"/>
+            <column name="FEATURE_KEY" value="Predicted Obsolescence Year"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.predictedObsolescenceYear"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="44"/>
+            <column name="FEATURE_KEY" value="Obsolescence / LTB date"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.obsolescenceLtbDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="45"/>
+            <column name="FEATURE_KEY" value="Range Y to EOL Minimum"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.rangeEolMin"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="46"/>
+            <column name="FEATURE_KEY" value="Range Y to EOL Maximum"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.rangeEolMax"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="47"/>
+            <column name="FEATURE_KEY" value="Risk Percentage"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="overallRiskScorePercentage"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="48"/>
+            <column name="FEATURE_KEY" value="LC Risk"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="lifeCycleRisk.lcRisk"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="49"/>
+            <column name="FEATURE_KEY" value="Multisourcing Risk"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="multisourceRisk.riskGrade"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="50"/>
+            <column name="FEATURE_KEY" value="RoHS Risk"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="environmentalRisk.riskGrade"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="51"/>
+            <column name="FEATURE_KEY" value="Availability Risk"/>
+            <column name="PARENT_FETURE" valueNumeric="40"/>
+            <column name="JSON_KEY" value="inventoryRisk.riskGrade"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="52"/>
+            <column name="FEATURE_KEY" value="ClassificationStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="53"/>
+            <column name="FEATURE_KEY" value="ECCN"/>
+            <column name="PARENT_FETURE" valueNumeric="52"/>
+            <column name="JSON_KEY" value="ECCN"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="54"/>
+            <column name="FEATURE_KEY" value="USML"/>
+            <column name="PARENT_FETURE" valueNumeric="52"/>
+            <column name="JSON_KEY" value="USML"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="55"/>
+            <column name="FEATURE_KEY" value="ScheduleB"/>
+            <column name="PARENT_FETURE" valueNumeric="52"/>
+            <column name="JSON_KEY" value="ScheduleB"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="56"/>
+            <column name="FEATURE_KEY" value="HTSUSA"/>
+            <column name="PARENT_FETURE" valueNumeric="52"/>
+            <column name="JSON_KEY" value="HTSUSA"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="57"/>
+            <column name="FEATURE_KEY" value="UNSPSC"/>
+            <column name="PARENT_FETURE" valueNumeric="52"/>
+            <column name="JSON_KEY" value="UNSPSC"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="58"/>
+            <column name="FEATURE_KEY" value="PriceStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="59"/>
+            <column name="FEATURE_KEY" value="Min Price"/>
+            <column name="PARENT_FETURE" valueNumeric="58"/>
+            <column name="JSON_KEY" value="Min Price"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="60"/>
+            <column name="FEATURE_KEY" value="AVG Price"/>
+            <column name="PARENT_FETURE" valueNumeric="58"/>
+            <column name="JSON_KEY" value="AVG Price"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="61"/>
+            <column name="FEATURE_KEY" value="Min Lead Time"/>
+            <column name="PARENT_FETURE" valueNumeric="58"/>
+            <column name="JSON_KEY" value="Min Lead Time"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="62"/>
+            <column name="FEATURE_KEY" value="Max Lead Time"/>
+            <column name="PARENT_FETURE" valueNumeric="58"/>
+            <column name="JSON_KEY" value="Max Lead Time"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="63"/>
+            <column name="FEATURE_KEY" value="Last Updated Date"/>
+            <column name="PARENT_FETURE" valueNumeric="58"/>
+            <column name="JSON_KEY" value="Last Updated Date"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="64"/>
+            <column name="FEATURE_KEY" value="QualificationsStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="65"/>
+            <column name="FEATURE_KEY" value="AEC Qualified"/>
+            <column name="PARENT_FETURE" valueNumeric="64"/>
+            <column name="JSON_KEY" value="aec.qualified"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="66"/>
+            <column name="FEATURE_KEY" value="AEC Number"/>
+            <column name="PARENT_FETURE" valueNumeric="64"/>
+            <column name="JSON_KEY" value="aec.qualifiedNo"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="67"/>
+            <column name="FEATURE_KEY" value="ConflictMiniralsStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="68"/>
+            <column name="FEATURE_KEY" value="Conflict Mineral Status"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="status"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="69"/>
+            <column name="FEATURE_KEY" value="EICC Membership"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="eiccMemmberShip"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="70"/>
+            <column name="FEATURE_KEY" value="EICC-GeSI/CMRT Template"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="eiccTemplate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="71"/>
+            <column name="FEATURE_KEY" value="EICC Version"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="version"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="72"/>
+            <column name="FEATURE_KEY" value="Certificate of Compliance"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="supplortingDocument.pdfURL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="73"/>
+            <column name="FEATURE_KEY" value="Conflict Minerals Policy"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="supplortingDocument.pdfURL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="74"/>
+            <column name="FEATURE_KEY" value="Conflict Mineral Statement"/>
+            <column name="PARENT_FETURE" valueNumeric="67"/>
+            <column name="JSON_KEY" value="supplortingDocument.pdfURL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="75"/>
+            <column name="FEATURE_KEY" value="CountryOfOriginStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="76"/>
+            <column name="FEATURE_KEY" value="Country of Origin"/>
+            <column name="PARENT_FETURE" valueNumeric="75"/>
+            <column name="JSON_KEY" value="countryOfOriginList.country"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="77"/>
+            <column name="FEATURE_KEY" value="COO URL"/>
+            <column name="PARENT_FETURE" valueNumeric="75"/>
+            <column name="JSON_KEY" value="countryOfOriginList.source"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="78"/>
+            <column name="FEATURE_KEY" value="ManufacturerStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="79"/>
+            <column name="FEATURE_KEY" value="MSL"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="MSL"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="80"/>
+            <column name="FEATURE_KEY" value="Maximum Reflow Temperature"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Maximum Reflow Temperature (°C)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="81"/>
+            <column name="FEATURE_KEY" value="Reflow Solder Time"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Reflow Solder Time (Sec)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="82"/>
+            <column name="FEATURE_KEY" value="Number of Reflow Cycle"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Number of Reflow Cycle"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="83"/>
+            <column name="FEATURE_KEY" value="Standard"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Standard"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="84"/>
+            <column name="FEATURE_KEY" value="Reflow Temp. Source"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Reflow Temp. Source"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="85"/>
+            <column name="FEATURE_KEY" value="Maximum Wave Temperature"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Maximum Wave Temperature (°C)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="86"/>
+            <column name="FEATURE_KEY" value="Wave Solder Time"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Wave Solder Time (Sec)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="87"/>
+            <column name="FEATURE_KEY" value="Wave Temp. Source"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Wave Temp. Source"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="88"/>
+            <column name="FEATURE_KEY" value="Lead Finish(Plating)"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Lead Finish(Plating)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="89"/>
+            <column name="FEATURE_KEY" value="Under Plating Material"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Under Plating Material"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="90"/>
+            <column name="FEATURE_KEY" value="Terminal Base Material"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Terminal Base Material"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="91"/>
+            <column name="FEATURE_KEY" value="Under Plating Porosity Free"/>
+            <column name="PARENT_FETURE" valueNumeric="78"/>
+            <column name="JSON_KEY" value="Under Plating Porosity Free"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="92"/>
+            <column name="FEATURE_KEY" value="PackageStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="93"/>
+            <column name="FEATURE_KEY" value="Basic Package Type"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Basic Package Type"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="94"/>
+            <column name="FEATURE_KEY" value="Package Family Name"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Family Name"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="95"/>
+            <column name="FEATURE_KEY" value="Supplier Package"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Supplier Package"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="96"/>
+            <column name="FEATURE_KEY" value="Package/Case"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package/Case"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="97"/>
+            <column name="FEATURE_KEY" value="Package Description"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Description"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="98"/>
+            <column name="FEATURE_KEY" value="Lead Shape"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Lead Shape"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="99"/>
+            <column name="FEATURE_KEY" value="Pin Count"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Pin Count"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="100"/>
+            <column name="FEATURE_KEY" value="PCB"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="PCB"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="101"/>
+            <column name="FEATURE_KEY" value="Tab"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Tab"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="102"/>
+            <column name="FEATURE_KEY" value="Package Length"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Length (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="103"/>
+            <column name="FEATURE_KEY" value="Package Width"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Width (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="104"/>
+            <column name="FEATURE_KEY" value="Package Height"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Height (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="105"/>
+            <column name="FEATURE_KEY" value="Seated Plane Height"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Seated Plane Height (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="106"/>
+            <column name="FEATURE_KEY" value="Pin Pitch"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Pin Pitch (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="107"/>
+            <column name="FEATURE_KEY" value="Package Diameter"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Diameter (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="108"/>
+            <column name="FEATURE_KEY" value="Mounting"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Mounting Type"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="109"/>
+            <column name="FEATURE_KEY" value="Package Material"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Material"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="110"/>
+            <column name="FEATURE_KEY" value="Package Outline"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Package Outline"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="111"/>
+            <column name="FEATURE_KEY" value="Jedec"/>
+            <column name="PARENT_FETURE" valueNumeric="92"/>
+            <column name="JSON_KEY" value="Jedec"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="112"/>
+            <column name="FEATURE_KEY" value="PackagingStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="113"/>
+            <column name="FEATURE_KEY" value="Packaging"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Packaging"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="114"/>
+            <column name="FEATURE_KEY" value="Packaging Suffix"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Packaging Suffix"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="115"/>
+            <column name="FEATURE_KEY" value="Reel Diameter"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Reel Diameter (in)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="116"/>
+            <column name="FEATURE_KEY" value="Reel Width"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Reel Width (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="117"/>
+            <column name="FEATURE_KEY" value="Tape Pitch"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Tape Pitch (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="118"/>
+            <column name="FEATURE_KEY" value="Tape Width"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Tape Width (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="119"/>
+            <column name="FEATURE_KEY" value="Feed Hole Pitch"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Feed Hole Pitch (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="120"/>
+            <column name="FEATURE_KEY" value="Hole Center to Component Center"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Hole Center to Component Center (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="121"/>
+            <column name="FEATURE_KEY" value="Lead Clinch Height"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Lead Clinch Height (mm)"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="122"/>
+            <column name="FEATURE_KEY" value="Component Orientation"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Component Orientation"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="123"/>
+            <column name="FEATURE_KEY" value="Packaging Document"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Packaging Document"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="124"/>
+            <column name="FEATURE_KEY" value="Quantity Of Packaging"/>
+            <column name="PARENT_FETURE" valueNumeric="112"/>
+            <column name="JSON_KEY" value="Quantity Of Packaging"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="125"/>
+            <column name="FEATURE_KEY" value="RareElementsStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="126"/>
+            <column name="FEATURE_KEY" value="Substance Information"/>
+            <column name="PARENT_FETURE" valueNumeric="125"/>
+            <column name="JSON_KEY" value="substances.substanceName"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="127"/>
+            <column name="FEATURE_KEY" value="CAS Number"/>
+            <column name="PARENT_FETURE" valueNumeric="125"/>
+            <column name="JSON_KEY" value="substances.casNo"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="128"/>
+            <column name="FEATURE_KEY" value="WeeeStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="129"/>
+            <column name="FEATURE_KEY" value="Lead Free"/>
+            <column name="PARENT_FETURE" valueNumeric="128"/>
+            <column name="JSON_KEY" value="leadFree"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="130"/>
+            <column name="FEATURE_KEY" value="ELV"/>
+            <column name="PARENT_FETURE" valueNumeric="128"/>
+            <column name="JSON_KEY" value="elv"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="131"/>
+            <column name="FEATURE_KEY" value="Halogen Free"/>
+            <column name="PARENT_FETURE" valueNumeric="128"/>
+            <column name="JSON_KEY" value="halogenFree"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="132"/>
+            <column name="FEATURE_KEY" value="Green"/>
+            <column name="PARENT_FETURE" valueNumeric="128"/>
+            <column name="JSON_KEY" value="green"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="133"/>
+            <column name="FEATURE_KEY" value="WEEE"/>
+            <column name="PARENT_FETURE" valueNumeric="128"/>
+            <column name="JSON_KEY" value="weeeStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="134"/>
+            <column name="FEATURE_KEY" value="ChinaROHSStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="135"/>
+            <column name="FEATURE_KEY" value="China RoHS"/>
+            <column name="PARENT_FETURE" valueNumeric="134"/>
+            <column name="JSON_KEY" value="chinaStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="136"/>
+            <column name="FEATURE_KEY" value="ReachStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="137"/>
+            <column name="FEATURE_KEY" value="REACH Status"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="reachStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="138"/>
+            <column name="FEATURE_KEY" value="Contains SVHC"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="containSvhc"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="139"/>
+            <column name="FEATURE_KEY" value="SVHC Limit Exceeded"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="exceedLimit"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="140"/>
+            <column name="FEATURE_KEY" value="List Version"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="svhcListVersion"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="141"/>
+            <column name="FEATURE_KEY" value="REACH Source Type"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="sources.sourceType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="142"/>
+            <column name="FEATURE_KEY" value="REACH Source Document"/>
+            <column name="PARENT_FETURE" valueNumeric="136"/>
+            <column name="JSON_KEY" value="sources.pdfUrl"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="143"/>
+            <column name="FEATURE_KEY" value="ROHSStrategy"/>
+            <column name="PARENT_FETURE" valueNumeric="0"/>
+            <column name="JSON_KEY" value=""/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="144"/>
+            <column name="FEATURE_KEY" value="RoHS Status (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.rohsStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="145"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.exemption"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="146"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption Type (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.exemptionType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="147"/>
+            <column name="FEATURE_KEY" value="Expiration Date (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.expirationDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="148"/>
+            <column name="FEATURE_KEY" value="Conversion Date (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.conversionDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="149"/>
+            <column name="FEATURE_KEY" value="RoHS Source Type (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.sources.sourceType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="150"/>
+            <column name="FEATURE_KEY" value="RoHS Source Document (2002/95/EC)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2002/95/EC.sources.url"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="151"/>
+            <column name="FEATURE_KEY" value="RoHS Status (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.rohsStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="152"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.exemption"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="153"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption Type (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.exemptionType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="154"/>
+            <column name="FEATURE_KEY" value="Expiration Date (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.conversionDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="155"/>
+            <column name="FEATURE_KEY" value="Conversion Date (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.expirationDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="156"/>
+            <column name="FEATURE_KEY" value="RoHS Source Type (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.sources.sourceType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="157"/>
+            <column name="FEATURE_KEY" value="RoHS Source Document (2011/65/EU)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU.sources.url"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="158"/>
+            <column name="FEATURE_KEY" value="RoHS Status (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.rohsStatus"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="159"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.exemption"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="160"/>
+            <column name="FEATURE_KEY" value="RoHS Exemption Type (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.exemptionType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="161"/>
+            <column name="FEATURE_KEY" value="Expiration Date (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.conversionDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="162"/>
+            <column name="FEATURE_KEY" value="Conversion Date (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.expirationDate"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="163"/>
+            <column name="FEATURE_KEY" value="RoHS Source Type (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.sources.sourceType"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+        <insert tableName="onprem_export_features">
+            <column name="ID" valueNumeric="164"/>
+            <column name="FEATURE_KEY" value="RoHS Source Document (2011/65/EU, 2015/863)"/>
+            <column name="PARENT_FETURE" valueNumeric="143"/>
+            <column name="JSON_KEY" value="rohsData.2011/65/EU, 2015/863.sources.url"/>
+            <column name="IS_ACTIVE" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
